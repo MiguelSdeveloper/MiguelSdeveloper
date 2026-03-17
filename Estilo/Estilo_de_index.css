@@ -9,29 +9,3 @@
     padding: 0;
 }
 
-.menu > ul{
-    display: flex;
-    justify-content: center; 
-    gap: 60px; /* espacio entre elementos */
-}
-
-.menu a{
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.submenu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-.TieneSubmenu:hover .submenu{
-    display: block;
-}
-
-.menu li{
-    position: relative;
-}
