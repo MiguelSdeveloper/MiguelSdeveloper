@@ -3,25 +3,32 @@
     justify-content: center;
     align-items: center;
 }
-.navbar {
+.menu {
+    list-style: none;
     display: flex;
     justify-content: center;
-    list-style: none;
+    margin: 0;
     padding: 0;
-    margin: 0
 }
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar .submenu {
-    display: none;
-}
-
-.navbar li:hover .submenu {
-    display: block;
-}
-
-.submenu {
+.menu li {
     position: relative;
 }
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.submenu li a {
+    padding: 10px 20px;
+}
+
