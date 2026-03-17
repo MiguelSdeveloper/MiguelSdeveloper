@@ -32,3 +32,12 @@
     padding: 10px 20px;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+
+}
