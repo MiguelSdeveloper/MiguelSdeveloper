@@ -1,17 +1,13 @@
-<<<<<<< HEAD
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+html {
+    background-color: black;
 }
 
 nav {
-    max-width: 600px;
+    max-width: 100%;
     margin: auto;
-    background-color: #333;
-    font-size: 20px;
-    margin-top: 30px;
+    background-color: black;
+    font-size: 23px;
+    margin-top: 0px;
 }
 
 .menu {
@@ -21,14 +17,13 @@ nav {
 }
 
 .menu > li > a {
-    display: block;
-    padding: 15px 20px;
+    padding: 15px 15px;
     color: white;
     text-decoration: none;
 }
 
 .menu > li:hover {
-    background-color: red;
+    background-color: green;
 }
 
 
@@ -45,30 +40,17 @@ nav {
 }
 
 .submenu li:hover {
-    background-color: black;
+    background-color: green;
 }
 
 .submenu li a {
     display: block;
-    padding: 15px 15px 15px 20px;
+    padding: 5px 15px 5px 15px;
     color: white;
     text-decoration: none;
 }
 
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.saludo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-footer {
+.marca_agua {
     display: flex;
     justify-content: center;
     background-color: black;
@@ -78,5 +60,3 @@ footer {
     height: 40px;
     color: white;
 }
-=======
->>>>>>> Modi-home
