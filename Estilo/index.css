@@ -58,15 +58,16 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 .saludo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
-footer {
+.marca_agua {
     display: flex;
     justify-content: center;
     background-color: black;
