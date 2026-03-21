@@ -54,19 +54,6 @@ nav {
     text-decoration: none;
 }
 
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.saludo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
 .marca_agua {
     display: flex;
     justify-content: center;
