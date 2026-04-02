@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablets (768px o menos) */
+@media (max-width: 768px) {
+
+  nav {
+    font-size: 18px;
+  }
+
+  .menu {
+    flex-direction: column; /* el menu se apila verticalmente */
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+  }
+
+  .submenu {
+    position: static; /* el submenu ya no flota, se queda en el flujo */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* Móviles (480px o menos) */
+@media (max-width: 480px) {
+
+  nav {
+    font-size: 16px;
+  }
+
+  .menu > li > a {
+    padding: 10px 15px;
+  }
+
+  .marca_agua {
+    font-size: 12px;
+    height: auto;
+    padding: 8px;
+    text-align: center;
+  }
+}
+
+
+html { 
+    background-color: black; /* modifca el fondo del sitio */
+}
+
+nav {
+    max-width: 100%;
+    margin: auto;
+    background-color: black; /* modifica el fondo del menu de navegacion */
+    font-size: 23px;
+    margin-top: 0px;
+}
+
+.menu {
+    list-style: none;
+    display: flex; /*modifica el menu de navegacion para que se vea horizontal */
+    justify-content: space-around;
+}
+
+.menu > li > a {
+    padding: 15px 15px;
+    color: white;
+    text-decoration: none; /* modifica la forma en la que se ve los elemetos*/
+    position: relative;
+    padding-bottom: 12px;
+    transition: color 0.3s;
+}
+.menu > li > a::after { /* crea una linea debajo de cada elemento del menu de navegacion */
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: 6px; 
+    width: 0%;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.25s ease;
+}
+
+.menu > li > a:hover { /* modifica el color de los elementos del menu de navegacion al pasar el mouse por encima */
+    color: #4ade80;
+}
+
+.menu > li > a:hover::after { /* hace que la linea debajo de cada elemento del menu de navegacion se vea al pasar el mouse por encima */
+    width: calc(100% - 30px);
+}
+
+.submenu { /* crea un submenu para cada elemento del menu de navegacion */
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(0, 0, 0, .5);
+}
+
+.menu li:hover .submenu { /* hace que el submenu se vea al pasar el mouse por encima del elemento del menu de navegacion */
+    display: block;
+}
+
+
+.submenu li a { /* modifica la forma en la que se ve los elementos del submenu */
+    display: block;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+    transition: color 0.2s;
+}
+.submenu li a::after { /* resalta el elemento del submenu al pasar el mouse por encima */
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: 6px;
+    width: 0%;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.25s ease;
+}
+
+.submenu li a:hover { /* modifica el color de los elementos del submenu al pasar el mouse por encima */
+    color: #4ade80;
+}
+
+.marca_agua { /* crea una marca de agua en el sitio */
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
