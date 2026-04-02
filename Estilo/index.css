@@ -1,14 +1,25 @@
-.foto_perfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+.foto_perfil { 
+    width: 300px;
+    height: 300px;
+    margin-left: 400px;
 }   
 
-
-
-.descripcion {
-    font-size: 16px;
-    color: white;
-    margin-bottom: 20px;
+.nivel1 {
+    color: #4ade80;
+    margin-left: 730px;
+    position: relative;
+    top: 160px;
+    
+}
+.nivel {
+    color: aliceblue;
+    margin-left: 730px;
+    position: relative;
+    top: 160px;
+}
+.nivel3 {
+    color: #4ade80;
+    margin-left: 730px;
+    position: relative;
+    top: 160px;
 }
